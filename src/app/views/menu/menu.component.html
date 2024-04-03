@@ -1,0 +1,27 @@
+<section class="relative">
+  <h1 class="text-2xl font-bold">Menu</h1>
+  <section class="flex flex-col bg-white rounded-md px-4 py-4 gap-2">
+    <div class="flex justify-between items-center">
+      <input
+        type="text"
+        id="email"
+        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5"
+        placeholder="Buscar menu"
+      />
+      <button
+        class="flex flex-row justify-center items-center gap-3 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        (click)="showFormFn()"
+      >
+        Crear Menu
+      </button>
+    </div>
+    <div [ngClass]="{ 'col-span-3': showForm(), 'col-span-full': !showForm() }">
+      <menu-table [menus]="menus() ?? []"></menu-table>
+    </div>
+    @defer (when showForm()) {
+      <div class="col-span-1">
+        <menu-form (addData)="addDataFn($event)"></menu-form>
+      </div>
+    } 
+  </section>
+</section>

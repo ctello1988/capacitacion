@@ -1,0 +1,49 @@
+<field-base
+  [id]="id()!"
+  [label]="label()!"
+  [fGroup]="fGroup()"
+  [controlName]="controlName()"
+  [control]="control()"
+>
+  @if (fGroup()) {
+    <ng-container [formGroup]="fGroup()!" content>
+      <input
+        title="{{ label() }}"
+        class="input"
+        [id]="id()"
+        [placeholder]="placeholder()"
+        [formControlName]="controlName()!"
+        [type]="type()"
+        [ngStyle]="styles()"
+        [upperCase]="activeUpercase()"
+      />
+    </ng-container>
+  } @else if (control()) {
+    <!-- esto es para un unico controlador -->
+    <input
+      title="{{ label() }}"
+      class="input"
+      [id]="id()"
+      [placeholder]="placeholder()"
+      [type]="type()"
+      [ngStyle]="styles()"
+      [formControl]="control()!"
+      [upperCase]="activeUpercase()"
+      content
+    />
+  } @else {
+    <!-- sin controladores -->
+    <input
+      title="{{ label() }}"
+      class="input"
+      [id]="id()"
+      [placeholder]="placeholder()"
+      [value]="valueText()"
+      [type]="type()"
+      [ngStyle]="styles()"
+      [disabled]="disabled() ?? false"
+      [upperCase]="activeUpercase()"
+      content
+    />
+  }
+</field-base>

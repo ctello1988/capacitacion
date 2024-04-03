@@ -1,0 +1,348 @@
+{
+    "cliente": [
+        {
+            "id": 1,
+            "nombre_completo": "Ana García",
+            "telefono": "+593 987654321",
+            "correo_electronico": "ana.garcia@email.com",
+            "fecha_nacimiento": "1980-01-01",
+            "direccion": "Calle Sucre 123",
+            "notas": "Alergia a las nueces",
+            "foto": "female-01.jpg",
+            "genero": "Femenino"
+        },
+        {
+            "id": 2,
+            "nombre_completo": "Juan Pérez",
+            "telefono": "+593 987654322",
+            "correo_electronico": "juan.perez@email.com",
+            "fecha_nacimiento": "1985-02-02",
+            "direccion": "Calle Bolívar 456",
+            "notas": "Ninguna",
+            "foto": "male-01.jpg",
+            "genero": "Masculino"
+        },
+        {
+            "id": 3,
+            "nombre_completo": "María López",
+            "telefono": "+593 987654323",
+            "correo_electronico": "maria.lopez@email.com",
+            "fecha_nacimiento": "1990-03-03",
+            "direccion": "Avenida Quito 789",
+            "notas": "Es vegetariana",
+            "foto": "female-02.jpg",
+            "genero": "Femenino"
+        },
+        {
+            "id": 4,
+            "nombre_completo": "Pedro Martínez",
+            "telefono": "+593 987654324",
+            "correo_electronico": "pedro.martinez@email.com",
+            "fecha_nacimiento": "1995-04-04",
+            "direccion": "Calle Cuenca 1011",
+            "notas": "Practica ciclismo",
+            "foto": "male-02.jpg",
+            "genero": "Masculino"
+        },
+        {
+            "id": 5,
+            "nombre_completo": "Sofía González",
+            "telefono": "+593 987654325",
+            "correo_electronico": "sofia.gonzalez@email.com",
+            "fecha_nacimiento": "2000-05-05",
+            "direccion": "Calle Riobamba 1213",
+            "notas": "Le gusta leer",
+            "foto": "female-03.jpg",
+            "genero": "Femenino"
+        },
+        {
+            "id": 6,
+            "nombre_completo": "David Rodríguez",
+            "telefono": "+593 987654326",
+            "correo_electronico": "david.rodriguez@email.com",
+            "fecha_nacimiento": "2005-06-06",
+            "direccion": "Calle Loja 1415",
+            "notas": "Juega fútbol",
+            "foto": "male-03.jpg",
+            "genero": "Masculino"
+        },
+        {
+            "id": 7,
+            "nombre_completo": "Anabel Torres",
+            "telefono": "+593 987654327",
+            "correo_electronico": "anabel.torres@email.com",
+            "fecha_nacimiento": "2010-07-07",
+            "direccion": "Calle Ambato 1617",
+            "notas": "Le gusta la música",
+            "foto": "female-04.jpg",
+            "genero": "Femenino"
+        },
+        {
+            "id": 8,
+            "nombre_completo": "Carlos Mendoza",
+            "telefono": "+593 987654328",
+            "correo_electronico": "carlos.mendoza@email.com",
+            "fecha_nacimiento": "2015-08-08",
+            "direccion": "Calle Manta 1819",
+            "notas": "Es muy creativo",
+            "foto": "male-04.jpg",
+            "genero": "Masculino"
+        },
+        {
+            "id": 9,
+            "nombre_completo": "Isabel Vargas",
+            "telefono": "+593 987654329",
+            "correo_electronico": "isabel.vargas@email.com",
+            "fecha_nacimiento": "2020-09-09",
+            "direccion": "Calle Machala 2021",
+            "notas": "Le encantan los animales",
+            "foto": "female-05.jpg",
+            "genero": "Femenino"
+        },
+        {
+            "id": 10,
+            "nombre_completo": "Luis García",
+            "telefono": "+593 987654330",
+            "correo_electronico": "luis.garcia@email.com",
+            "fecha_nacimiento": "2025-10-10",
+            "direccion": "Calle Guayaquil 2223",
+            "notas": "Es muy inteligente",
+            "foto": "male-05.jpg",
+            "genero": "Masculino"
+        }
+    ],
+    "menu": [
+        {
+            "id": 1,
+            "nombre_plato": "Pizza Margarita",
+            "descripcion_plato": "Pizza con salsa de tomate, mozzarella y albahaca.",
+            "id_categoria": 1,
+            "precio_venta": 10,
+            "costo_produccion": 5,
+            "ingredientes": [
+                {
+                    "nombre_ingrediente": "Harina de trigo",
+                    "cantidad": 100
+                },
+                {
+                    "nombre_ingrediente": "Salsa de tomate",
+                    "cantidad": 50
+                },
+                {
+                    "nombre_ingrediente": "Queso mozzarella",
+                    "cantidad": 100
+                },
+                {
+                    "nombre_ingrediente": "Albahaca fresca",
+                    "cantidad": 10
+                }
+            ],
+            "alergenos": [
+                "Gluten",
+                "Lácteos"
+            ],
+            "imagen_plato": "https://resizer.glanacion.com/resizer/v2/la-pizza-margarita-lleva-los-colores-de-la-M7NX62ONAJGRHMGZQKL3UMOIG4.jpeg?auth=95a4f0c18b4249f8a85c43e89ed95fc56dbfa22ac852945962285bb3c2638680&width=768&height=512&quality=70&smart=true"
+        },
+        {
+            "id": 2,
+            "nombre_plato": "Pizza Vegetariana",
+            "descripcion_plato": "Pizza con salsa de tomate, mozzarella, pimientos verdes, cebolla, champiñones y aceitunas negras.",
+            "id_categoria": 1,
+            "precio_venta": 12,
+            "costo_produccion": 6,
+            "ingredientes": [
+                {
+                    "nombre_ingrediente": "Harina de trigo",
+                    "cantidad": 100
+                },
+                {
+                    "nombre_ingrediente": "Salsa de tomate",
+                    "cantidad": 50
+                },
+                {
+                    "nombre_ingrediente": "Queso mozzarella",
+                    "cantidad": 100
+                },
+                {
+                    "nombre_ingrediente": "Pimientos verdes",
+                    "cantidad": 50
+                },
+                {
+                    "nombre_ingrediente": "Cebolla",
+                    "cantidad": 50
+                },
+                {
+                    "nombre_ingrediente": "Champiñones",
+                    "cantidad": 50
+                },
+                {
+                    "nombre_ingrediente": "Aceitunas negras",
+                    "cantidad": 10
+                }
+            ],
+            "alergenos": [
+                "Gluten"
+            ],
+            "imagen_plato": "https://cdn.shopify.com/s/files/1/0191/9978/files/Pizza-Veggie-Supreme-blog.jpg?v=1652775259"
+        },
+        {
+            "id": 3,
+            "nombre_plato": "Pizza Cuatro Quesos",
+            "descripcion_plato": "Pizza con salsa de tomate, mozzarella, provolone, gorgonzola y parmesano.",
+            "id_categoria": 1,
+            "precio_venta": 14,
+            "costo_produccion": 7,
+            "ingredientes": [
+                {
+                    "nombre_ingrediente": "Harina de trigo",
+                    "cantidad": 100
+                },
+                {
+                    "nombre_ingrediente": "Salsa de tomate",
+                    "cantidad": 50
+                },
+                {
+                    "nombre_ingrediente": "Queso mozzarella",
+                    "cantidad": 50
+                },
+                {
+                    "nombre_ingrediente": "Queso provolone",
+                    "cantidad": 50
+                },
+                {
+                    "nombre_ingrediente": "Queso gorgonzola",
+                    "cantidad": 50
+                },
+                {
+                    "nombre_ingrediente": "Queso parmesano",
+                    "cantidad": 20
+                }
+            ],
+            "alergenos": [
+                "Gluten",
+                "Lácteos"
+            ],
+            "imagen_plato": "https://images.hola.com/imagenes/cocina/recetas/20230904238241/pizza-cuatro-quesos/1-299-522/pizzacuatroquesos-adob-t.jpg"
+        },
+        {
+            "id": 4,
+            "nombre_plato": "Pizza Diavola",
+            "descripcion_plato": "Pizza con salsa de tomate, mozzarella, pepperoni, salami picante y chile jalapeño.",
+            "id_categoria": 1,
+            "precio_venta": 13,
+            "costo_produccion": 6.5,
+            "ingredientes": [
+                {
+                    "nombre_ingrediente": "Harina de trigo",
+                    "cantidad": 100
+                },
+                {
+                    "nombre_ingrediente": "Salsa de tomate",
+                    "cantidad": 50
+                },
+                {
+                    "nombre_ingrediente": "Queso mozzarella",
+                    "cantidad": 100
+                },
+                {
+                    "nombre_ingrediente": "Pepperoni",
+                    "cantidad": 50
+                },
+                {
+                    "nombre_ingrediente": "Salami picante",
+                    "cantidad": 50
+                },
+                {
+                    "nombre_ingrediente": "Chile jalapeño",
+                    "cantidad": 1
+                }
+            ],
+            "alergenos": [
+                "Gluten",
+                "Lácteos"
+            ],
+            "imagen_plato": "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/0EA71728-231C-4C47-A4B2-F2231AB7769D/Derivates/CBD91DB5-FC9E-4C44-8D9B-1AE0D873F9D8.jpg"
+        }
+    ],
+    "pedido": [
+        {
+            "id": 1,
+            "fecha_pedido": "2024-02-28",
+            "hora_pedido": "12:00",
+            "cliente": 1,
+            "mesa": 2,
+            "estado_pedido": "En espera",
+            "lista_platos": [
+                {
+                    "id_menu": 1,
+                    "cantidad": 1
+                }
+            ],
+            "total_pedido": 10,
+            "metodo_pago": "Efectivo"
+        }
+    ],
+    "inventario": [
+        {
+            "id": 1,
+            "nombre_ingrediente": "Harina de trigo",
+            "unidad_medida": "Kg",
+            "cantidad_stock": 10,
+            "precio_compra": 2,
+            "proveedor": "Proveedor A",
+            "fecha_vencimiento": "2024-03-31"
+        }
+    ],
+    "reserva": [
+        {
+            "id": 1,
+            "fecha_reserva": "2024-03-01",
+            "hora_reserva": "19:00",
+            "nombre_cliente": "Juan Pérez",
+            "numero_personas": 4,
+            "telefono_contacto": "+593 987654321",
+            "mesa": 4,
+            "estado_reserva": "Confirmada"
+        }
+    ],
+    "mesero": [
+        {
+            "id": 1,
+            "nombre_completo": "Pedro López",
+            "telefono": "+593 987654321",
+            "correo_electronico": "pedro.lopez@email.com",
+            "fecha_nacimiento": "1985-01-01",
+            "direccion": "Calle Bolívar 456",
+            "salario": 1000,
+            "cargo": "Mesero",
+            "foto_mesero": "url_foto_pedro_lopez.jpg"
+        }
+    ],
+    "categoria": [
+        {
+            "id": 1,
+            "nombre_categoria": "Pizzas",
+            "descripcion_categoria": "Pizzas tradicionales y especiales."
+        },
+        {
+            "id": 2,
+            "nombre_categoria": "Pastas",
+            "descripcion_categoria": "Pastas frescas con diferentes salsas."
+        },
+        {
+            "id": 3,
+            "nombre_categoria": "Ensaladas",
+            "descripcion_categoria": "Ensaladas frescas y saludables."
+        },
+        {
+            "id": 4,
+            "nombre_categoria": "Postres",
+            "descripcion_categoria": "Postres deliciosos para todos los gustos."
+        },
+        {
+            "id": 5,
+            "nombre_categoria": "Bebidas",
+            "descripcion_categoria": "Bebidas refrescantes y calientes."
+        }
+    ]
+}

@@ -1,0 +1,155 @@
+<!-- //cSpell:disable -->
+<section class="flex flex-col mt-4 gap-2 bg-white rounded-md p-4">
+  <h1>Bloques usados con Defer</h1>
+  <p>
+    &#64;placeholder : Este bloque se muestra mientras se carga el contenido
+    diferido. Sirve como marcador de posición temporal para el contenido
+    diferido. <br />
+    ⭐ Utiliza este bloque para mostrar loading o placeholders para indicar que
+    el contenido se está cargando ⭐
+  </p>
+  <p>
+    &#64;loading : Este bloque se renderiza cuando se está cargando el contenido
+    diferido.<br />
+    ⭐ Utilízalo para mostrar indicadores o mensajes de carga personalizados⭐
+  </p>
+  <p>
+    &#64;error: Este bloque se renderiza si hay un error cargando el contenido
+    diferido.<br />
+    ⭐ Utilízalo para gestionar y mostrar mensajes de error o contenido
+    alternativo cuando pasa un error ⭐
+  </p>
+</section>
+
+<section class="flex flex-col mt-4 gap-2 bg-white rounded-md p-4">
+  <h1>Tirggers usados con Defer</h1>
+  <p>
+    on idle: Esta condición de disparo se cumple cuando el estado del navegador
+    pasa a ser idle. Se suele utilizar para aplazar la carga hasta que el
+    navegador no esté ocupado con otras tareas.
+  </p>
+  <p>
+    on viewport: Esta condición se cumple cuando el contenido aplazado entra en
+    la ventana gráfica, es decir, se hace visible para el usuario. Es útil para
+    la carga diferida de contenido que está por debajo del pliegue o que no es
+    visible inmediatamente.
+  </p>
+  <p>
+    on interaction: Esta condición se cumple cuando el usuario interactúa con el
+    marcador de posición o con los elementos que lo rodean. Resulta útil cuando
+    se desea cargar el contenido diferido tras la interacción del usuario, como
+    al hacer clic o al pasar el ratón por encima.
+  </p>
+  <p>
+    on hover: Esta condición de activación se cumple cuando el usuario pasa el
+    ratón por encima del marcador de posición o de los elementos que lo rodean.
+    Es útil para la carga diferida de contenido que debe cargarse cuando el
+    usuario pasa el ratón por encima.
+  </p>
+  <p>
+    on immediate: Esta condición de activación se cumple inmediatamente, sin
+    ningún retraso. Es útil para situaciones en las que se desea cargar el
+    contenido diferido inmediatamente sin esperar.
+  </p>
+  <p>
+    on timer: Esta condición de activación se cumple después de un retardo
+    especificado. Permite establecer un temporizador y cargar el contenido
+    diferido una vez transcurrido el tiempo especificado.
+  </p>
+</section>
+
+<section class="flex flex-col mt-4 gap-2 bg-white rounded-md p-4">
+  <div class="flex flex-col mt-4">
+    <section class="bg-red-200 rounded-lg">
+      <h1>Defer con interaccion de timmer</h1>
+      @defer (on timer(3s)) {
+        <h1>****** Defer cargado al terminar el timer ****</h1>
+      } @placeholder {
+        <h1>Este defer se cargara con un timer</h1>
+      }
+    </section>
+  </div>
+
+  <div class="flex flex-col mt-4">
+    <section class="bg-white rounded-lg">
+      <h1>Defer con expresion logica</h1>
+      @defer (when true) {
+        <h1>****** Defer cargado con expresion logica ****</h1>
+      } @placeholder {
+        <h1>para activar este defer presenta el formulario</h1>
+      } @loading (minimum 3s) {
+        <h1>Cargando defer con expresion logica</h1>
+      }
+    </section>
+  </div>
+
+  <div class="flex flex-col mt-4">
+    <section class="bg-white rounded-lg">
+      <h1>****** Defer cargado con on imediatamente ****</h1>
+      @defer (on immediate) {
+        <h1>****** Defer cargado inmediatamente ****</h1>
+      }
+    </section>
+  </div>
+
+  <div class="flex flex-col mt-4">
+    <section class="bg-blue-200 rounded-lg">
+      <h1>Defer con interaccion del propio elemento</h1>
+      @defer (on interaction) {
+        <h1>****** Defer cargado con interacion ****</h1>
+      } @placeholder {
+        <h1>para activar este defer interactua con este elemento</h1>
+      }
+    </section>
+  </div>
+
+  <div class="flex flex-col mt-4">
+    <section class="bg-yellow-200 rounded-lg">
+      <button
+        #btnInteraction
+        type="button"
+        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+      >
+        hola, click on me
+      </button>
+      <h1>Defer con interaccion de boton</h1>
+      @defer (on interaction(btnInteraction)) {
+        <h1>****** Defer cargado con interacion de boton ****</h1>
+      } @placeholder {
+        <h1>para activar este defer interactua con el boton</h1>
+      }
+
+      <div class="bg-slate-500 w-full h-6"></div>
+
+      @defer (on hover(btnInteraction)) {
+        <h1>****** Defer cargado al pasar el mouse sobre el boton ****</h1>
+      } @placeholder {
+        <h1>para activar este defer pasar el mouse sobre el boton</h1>
+      }
+    </section>
+  </div>
+
+  <div class="flex flex-col mt-4">
+    <section class="bg-pink-200 rounded-lg">
+      <h1>Defer con interaccion del propio elemento</h1>
+      @defer (on hover) {
+        <h1>****** Defer cargado al pasar el mouse sobre el elemento ****</h1>
+      } @placeholder {
+        <h1>para activar este defer pasa sobre el elemento</h1>
+      }
+    </section>
+  </div>
+
+  <div class="flex flex-col mt-4">
+    <section class="bg-pink-200 rounded-lg">
+      <h1>Defer se ejecuta cuando entra en la ventana</h1>
+      @defer (on viewport) {
+        <h1>****** Defer cargado al entrar en la ventana ****</h1>
+      } @placeholder {
+        <h1>para activar este defer entra en la ventana</h1>
+      } @loading (minimum 10s) {
+        <h1>Cargando defer</h1>
+      }
+    </section>
+  </div>
+</section>

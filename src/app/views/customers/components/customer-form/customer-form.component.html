@@ -1,0 +1,55 @@
+<!-- //cSpell:disable -->
+<div class="max-w-sm mx-auto px-1 py-2 rounded-md">
+  <text
+    [label]="'Nombre'"
+    placeholder="Ingrese el nombre de la categoria"
+    [fGroup]="form"
+    controlName="name"
+  />
+  <text
+    [label]="'Direccion'"
+    placeholder="Ingrese su Direccion"
+    [fGroup]="form"
+    controlName="address"
+  />
+  <text
+    [label]="'Cumpleanios'"
+    placeholder="En que año naciste?"
+    [fGroup]="form"
+    controlName="birthday"
+  />
+  <text
+    [label]="'Genero'"
+    placeholder="Cual es tu genero?"
+    [fGroup]="form"
+    controlName="gender"
+  />
+  <text
+    [label]="'Correo'"
+    placeholder="Ingresa tu correo"
+    [fGroup]="form"
+    controlName="mail"
+  />
+  <text
+    [label]="'Telefono'"
+    placeholder="Ingresa tu telefono"
+    [fGroup]="form"
+    controlName="phone"
+  />
+  <text
+    [label]="'Foto'"
+    placeholder="direccion de la imagen"
+    [fGroup]="form"
+    controlName="picture"
+  />
+  <text
+    [label]="'Notas'"
+    placeholder="Notas adicionales"
+    [fGroup]="form"
+    controlName="notes"
+  />
+
+  <button type="submit" class="submitButton" (click)="saveData()">
+    Enviar
+  </button>
+</div>

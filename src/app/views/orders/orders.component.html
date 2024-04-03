@@ -1,0 +1,44 @@
+<section class="relative">
+  <h1 class="text-2xl font-bold">Ordenes</h1>
+  <section class="flex rounded-md bg-white px-4 py-4 gap-2">
+    <div class="w-full grid grid-cols-4">
+
+      @for (order of order(); track order) {
+
+      <div class="col-span-1 flex flex-col shadow-md py-2 px-4 gap-2">
+        <div class="w-full h-32 rounded-md bg-slate-500 overflow-hidden">
+          <img
+            srcset="
+              https://s3.amazonaws.com/businessinsider.mx/wp-content/uploads/2022/12/26140140/Business_Insider_Mexico_tendencias_comida_rapida_fast_food_portada-pixabay_JRMartins-1280x620.jpg
+            "
+            alt="nombreAlterno"
+            class="object-cover w-full h-full"
+          />
+        </div>
+        <div class="text-sm">
+          Pedidos solicitados: <b>5</b>
+          <!-- de: {{ order.customer?.fullName }} -->
+        </div>
+        <div
+          class="w-full h-32 bg-slate-200 rounded-md py-1 pr-1 flex flex-row overflow-x-scroll"
+        >
+          <div
+            class="ml-1 h-full min-w-32 w-32 rounded-md shadow-md p-1 bg-white gap-1 flex flex-col"
+          >
+            <div class="w-full h-4/5 rounded-md border border-black/20">
+              <img
+                src="https://s3.amazonaws.com/businessinsider.mx/wp-content/uploads/2022/12/26140140/Business_Insider_Mexico_tendencias_comida_rapida_fast_food_portada-pixabay_JRMartins-1280x620.jpg"
+                alt="alt_name"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+        </div>
+      </div>
+    }
+    </div>
+  </section>
+</section>
